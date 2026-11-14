@@ -40,13 +40,13 @@ Keep `uv.lock` and `frontend/package-lock.json` with the project: they are what 
 
 1. Install uv.
 
-   Windows (run once in PowerShell). The version is in the address:
+   Windows (run once in PowerShell):
 
    ```powershell
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/0.13.7/install.ps1 | iex"
    ```
 
-   macOS (not tested on Mac):
+   macOS
 
    ```bash
    curl -LsSf https://astral.sh/uv/0.13.7/install.sh | sh
@@ -145,7 +145,7 @@ The report details window uses `src/components/ui/dialog.tsx`, which is part of 
 
 Before a report goes to any cloud service, a small model on your own computer removes names, street addresses, phone numbers, ID numbers and emails. Place names such as "Umlazi" stay, because routing needs them.
 
-Install Ollama (Windows: download `OllamaSetup.exe` from https://ollama.com/download; macOS: `curl -fsSL https://ollama.com/install.sh | sh`, not tested on Mac). Then, in a new terminal:
+Install Ollama (Windows: download `OllamaSetup.exe` from https://ollama.com/download; macOS: `curl -fsSL https://ollama.com/install.sh | sh`). Then, in a new terminal:
 
 ```bash
 ollama pull llama3.2:3b
